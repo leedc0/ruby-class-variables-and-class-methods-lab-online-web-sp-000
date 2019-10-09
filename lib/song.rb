@@ -45,3 +45,5 @@ end
 
 jump = Song.new("jump", "X", "rap")
 run = Song.new("run", "Y", "r&b")
+skip = Song.new("skip", "Y", "r&b")
+roll = Song.new("roll", "Y", "rap")
