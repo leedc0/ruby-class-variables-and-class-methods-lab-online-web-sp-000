@@ -13,19 +13,19 @@ attr_accessor :name, :artist, :genre
     @genre = genre
 
     @@count += 1
-    @@artist << @artist
-    @@genres << genre
+    @@artists << @artist
+    @@genres << @genre
   end
 
   def name
     @name
   end
 
-  def artists
+  def artist
     @artist
   end
 
-  def genres
+  def genre
     @genre
   end
 
