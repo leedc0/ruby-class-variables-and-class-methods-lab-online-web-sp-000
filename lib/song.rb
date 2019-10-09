@@ -16,6 +16,16 @@ attr_accessor :name, :artist, :genre
 
   end
 
-  def name()
+  def name
+    @name
+  end
+
+  def artist
+    @artist
+  end
+
+  def genre
+    @genre
+  end
 
 end
