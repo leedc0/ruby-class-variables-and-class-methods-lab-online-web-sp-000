@@ -42,7 +42,8 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    @@genre_count[@genre] << @genre
+    @@genre_count = []
+    @@genre_count[@genre] << @genre.size
   end
 
   def self.artist_count
