@@ -42,3 +42,6 @@ attr_accessor :name, :artist, :genre
   end
 
 end
+
+jump = Song.new("jump", "X", "rap")
+run = Song.new("run", "Y", "r&b")
