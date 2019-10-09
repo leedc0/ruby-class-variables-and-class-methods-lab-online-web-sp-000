@@ -2,8 +2,8 @@ class Song
 
 attr_accessor :name, :artist, :genre
 @@count = 0
-@@artist = []
-@@genre = []
+@@artists = []
+@@genres = []
 @@genre_count = {} # example - hash = Hash.new([]) ; hash[:one] << "uno"
 @@artist_count = {}
 
@@ -14,17 +14,18 @@ attr_accessor :name, :artist, :genre
 
     @@count += 1
     @@artist << @artist
+    @@genres << genre
   end
 
   def name
     @name
   end
 
-  def artist
+  def artists
     @artist
   end
 
-  def genre
+  def genres
     @genre
   end
 
@@ -33,7 +34,11 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.artist
-    @@artist
+    @@artists
+  end
+
+  def self.genres
+    @@genres
   end
 
 end
