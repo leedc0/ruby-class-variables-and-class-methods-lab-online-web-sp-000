@@ -4,8 +4,6 @@ attr_accessor :name, :artist, :genre
 @@count = 0
 @@artists = []
 @@genres = []
-# @@genre_count = {} # example - hash = Hash.new([]) ; hash[:one] << "uno"
-# @@artist_count = {}
 
   def initialize(name, artist, genre)
     @name = name
@@ -16,18 +14,6 @@ attr_accessor :name, :artist, :genre
     @@artists << @artist
     @@genres << @genre
   end
-
-  # def name
-  #   @name
-  # end
-  #
-  # def artist
-  #   @artist
-  # end
-  #
-  # def genre
-  #   @genre
-  # end
 
   def self.count
     @@count
@@ -55,6 +41,7 @@ attr_accessor :name, :artist, :genre
 
   def self.artist_count
     @@artist_count = {}
+    
   end
 
 end
