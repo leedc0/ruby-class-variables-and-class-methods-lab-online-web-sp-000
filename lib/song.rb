@@ -43,9 +43,9 @@ attr_accessor :name, :artist, :genre
     artist_count = {}
     @@artists.each do |a|
       if artist_count[a]
-        artist_count[a] =+ "go"
+        artist_count[a] =+ 1
       else
-        artist_count[a] = "stop"
+        artist_count[a] = 1
       end
     end
     artist_count
