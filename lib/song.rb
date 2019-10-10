@@ -46,6 +46,8 @@ attr_accessor :name, :artist, :genre
         artist_count[a] =+ 1
       else
         artist_count[a] = "go"
+      end
+    end
   end
 
 end
