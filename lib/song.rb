@@ -4,8 +4,8 @@ attr_accessor :name, :artist, :genre
 @@count = 0
 @@artists = []
 @@genres = []
-@@genre_count = {} # example - hash = Hash.new([]) ; hash[:one] << "uno"
-@@artist_count = {}
+# @@genre_count = {} # example - hash = Hash.new([]) ; hash[:one] << "uno"
+# @@artist_count = {}
 
   def initialize(name, artist, genre)
     @name = name
@@ -42,12 +42,16 @@ attr_accessor :name, :artist, :genre
   end
 
   def self.genre_count
-    @@genre_count = []
-    @@genre_count[@genre] << @genre.size
+    @@genre_count = {}
+      @@genres.collect do |g|
+        if @@genre_count.has_key?(g)
+          @@genre_count[g] << @@genre.count(g)
+        else
+          @@genre_count[g] = @@genre.count[g]
   end
 
   def self.artist_count
-
+    @@artist_count = {}
   end
 
 end
