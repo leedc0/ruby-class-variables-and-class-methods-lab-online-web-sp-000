@@ -47,7 +47,7 @@ attr_accessor :name, :artist, :genre
         if @@genre_count.has_key?(g)
           @@genre_count[g] << @@genres.count(g)
         else
-          @@genre_count[g] = @@genres.count[g]
+          @@genre_count[g] = @@genres.count(g)
         end
       end
   end
