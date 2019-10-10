@@ -45,9 +45,9 @@ attr_accessor :name, :artist, :genre
     @@genre_count = {}
       @@genres.collect do |g|
         if @@genre_count.has_key?(g)
-          @@genre_count[g] << @@genre.count(g)
+          @@genre_count[g] << @@genres.count(g)
         else
-          @@genre_count[g] = @@genre.count[g]
+          @@genre_count[g] = @@genres.count[g]
         end
       end
   end
